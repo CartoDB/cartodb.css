@@ -58,6 +58,10 @@ header { // general header
     letter-spacing:-4px;
     width:auto;
 
+    &.margin {
+      margin-top:8px;
+    }
+
     li {
       @include inline-block();
       width:auto;
