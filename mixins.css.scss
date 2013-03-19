@@ -5,7 +5,7 @@
 
 @import "compass";
 
-@mixin text-indent() {
+@mixin text-indent {
   text-indent:-9999px;
   line-height:0px;
   font-size:0px;
@@ -130,6 +130,9 @@
   -ms-user-select: none;
   user-select: none;
 }
+
+.white-gradient-shadow-top    { @include background-image(linear-gradient(top, rgba(255,255,255,0.95) 0%, rgba(255,255,255,0.04) 100%)); }
+.white-gradient-shadow-bottom { @include background-image(linear-gradient(top, rgba(255,255,255,0.04) 0%, rgba(255,255,255,0.95) 100%)); }
 
 /* BASE TEMPLATE FOR BLOCKS: DO NOT CHANGE HERE */
 
