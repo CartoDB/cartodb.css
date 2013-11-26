@@ -126,6 +126,14 @@
           @include text-overflow();
         }
 
+        p.info {
+          float:right;
+          @include inline-block();
+          margin:2px 0 0;
+          font-size:15px;
+          color:#B7B7B7;
+        }
+
         .gdrive-chooser, .dropbox-dropin-btn {float:left!important}
 
         input {
