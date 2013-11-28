@@ -58,8 +58,7 @@ header { // general header
 
   ul {
     position:relative;
-    top: 9px;
-
+    top:7px;
     display:block;
     letter-spacing:-4px;
     width:auto;
@@ -72,6 +71,7 @@ header { // general header
 
       a {
         font-size:15px;
+        font-weight:300;
         color:white;
         text-shadow:0 1px $text-shadow-color;
 
