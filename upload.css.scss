@@ -296,7 +296,8 @@
   .gdrive-chooser {
     display: block;
     line-height: 21px;
-    width: 109px;
+    padding-left:10px;
+    padding-right:10px;
     border: 1px solid #999;
     @include border-radius(3px);
     @include background(linear-gradient(#fff, #f2f2f2));
