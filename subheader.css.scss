@@ -235,6 +235,7 @@ div.subheader {
       line-height: 18px;
 
       .inner { position:relative; }
+      .inner p { width: 1000px; color: #000; font-size: 15px; line-height: 18px; }
 
       &.upgraded {
         background: #DCF0C0;
