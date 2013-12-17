@@ -30,6 +30,14 @@
   user-select: $val;
 }
 
+@mixin display-flex() {
+  display: -webkit-box;      /* OLD - iOS 6-, Safari 3.1-6 */
+  display: -moz-box;         /* OLD - Firefox 19- (buggy but mostly works) */
+  display: -ms-flexbox;      /* TWEENER - IE 10 */
+  display: -webkit-flex;     /* NEW - Chrome */
+  display: flex;             /* NEW, Spec - Opera 12.1, Firefox 20+ */
+}
+
 @mixin progress-background($rgba) {
   background-image: -webkit-linear-gradient(-45deg,$rgba 25%,transparent 25%,transparent 50%,$rgba 50%,$rgba 75%,transparent 75%,transparent);
   background-image: -moz-linear-gradient(-45deg,$rgba 25%,transparent 25%,transparent 50%,$rgba 50%,$rgba 75%,transparent 75%,transparent);
