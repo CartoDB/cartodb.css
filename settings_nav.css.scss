@@ -1,0 +1,71 @@
+
+  /**
+   *
+   */
+
+  @import "compass/css3/inline-block";
+  @import "compass/css3/box-shadow";
+  @import "common/mixins";
+  @import "common/common-sprite";
+  @import "common/vars";
+
+  nav.account-settings {
+    position:relative;
+    background:white;
+    border-bottom:1px solid #CECECE;
+    @include single-box-shadow(rgba(0,0,0,0.07), 0, 3px, 3px, 0, false);
+    overflow:visible;
+
+    a {
+      @include inline-block();
+      width:187px;
+      margin:0;
+      padding:25px 30px;
+      border-right:1px solid #E5E5E5;
+
+      .icon, .info {
+        @include inline-block();
+      }
+
+      .icon {
+        width:34px;
+        height:34px;
+        @include common-sprite(settings_icons);
+
+        &.settings {@include common-sprite(settings_icons, $offset-x:-40px)}
+        &.stats {@include common-sprite(settings_icons, $offset-x:-80px)}
+      }
+
+      .info {
+        width:140px;
+        margin-left:8px;
+        
+        p {
+          color:#4580B5;
+          font-size:15px;
+          font-family:$text-fonts2;
+        }
+      }
+
+      // Menu items states
+      &:hover, &.selected {
+        text-decoration:none;
+
+        .icon {
+          &.organization {@include common-sprite(settings_icons, $offset-y:-46px)}
+          &.settings {@include common-sprite(settings_icons, $offset-x:-40px, $offset-y:-46px)}
+        }
+        p {color:#666;}
+      }
+
+      &.disabled {
+        cursor:default;
+        p {color:#4580B5}
+        .icon {@include common-sprite(settings_icons);}
+      }
+
+      &.selected {
+        &:hover {cursor:default}
+      }
+    }
+  }
