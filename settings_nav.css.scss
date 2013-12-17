@@ -54,6 +54,7 @@
         .icon {
           &.organization {@include common-sprite(settings_icons, $offset-y:-46px)}
           &.settings {@include common-sprite(settings_icons, $offset-x:-40px, $offset-y:-46px)}
+          &.stats {@include common-sprite(settings_icons, $offset-x:-80px)}
         }
         p {color:#666;}
       }
@@ -61,7 +62,6 @@
       &.disabled {
         cursor:default;
         p {color:#4580B5}
-        .icon {@include common-sprite(settings_icons);}
       }
 
       &.selected {
