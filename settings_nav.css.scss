@@ -67,5 +67,7 @@
       &.selected {
         &:hover {cursor:default}
       }
+
+      &:last-child { border:none }
     }
   }
