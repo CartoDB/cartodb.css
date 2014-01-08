@@ -58,8 +58,7 @@ header { // general header
 
   ul {
     position:relative;
-    top: 9px;
-
+    top:7px;
     display:block;
     letter-spacing:-4px;
     width:auto;
@@ -180,5 +179,8 @@ header { // general header
         }
       }
     }
+
+    // Admin header
+    &.admin { top:0 }
   }
 }
