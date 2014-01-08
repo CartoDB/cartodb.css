@@ -235,6 +235,7 @@ div.subheader {
       line-height: 18px;
 
       .inner { position:relative; }
+      .inner p { width: 1000px; color: #000; font-size: 15px; line-height: 18px; }
 
       &.upgraded {
         background: #DCF0C0;
@@ -251,7 +252,16 @@ div.subheader {
 
         &:hover {@include common-sprite(close_grey, $offset-y: -13px);}
         &:active {@include common-sprite(close_grey, $offset-y: -26px);}
+      }
 
+      a.upgrade {
+        position:absolute;
+        right:0;
+        top:-3px;
+        padding:4px 13px;
+        text-align:center;
+        font-weight:400;
+        font-size:13px;
       }
 
     }
