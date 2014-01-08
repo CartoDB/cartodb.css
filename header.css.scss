@@ -179,5 +179,8 @@ header { // general header
         }
       }
     }
+
+    // Admin header
+    &.admin { top:0 }
   }
 }
