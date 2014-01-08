@@ -87,7 +87,8 @@
 
     .field-1 {
       width:100%;
-      input[type="text"] { width:400px; }
+      input[type="text"],
+      input[type="password"] { width:400px; }
 
       &.field_with_errors input[type="text"] {
         width:359px;
@@ -97,7 +98,8 @@
     .field-2 {
       width:202px;
       
-      input[type="text"] {width:178px;}
+      input[type="text"],
+      input[type="password"] {width:178px;}
 
       &.field_with_errors input[type="text"] {
         width:137px;
@@ -107,7 +109,8 @@
     .field-3 {
       width:128px;
       
-      input[type="text"] {width:103px;}
+      input[type="text"],
+      input[type="password"] {width:103px;}
 
       &.field_with_errors input[type="text"] {
         width:62px;
@@ -131,11 +134,11 @@
     }
 
 
-    // Errors //
-    div.error {
+    // Fields error //
+    div.field_error {
       position:absolute;
       right:7px;
-      bottom:7px;
+      top:28px;
       width:26px;
       height:27px;
       @include text-indent();
