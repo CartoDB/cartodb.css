@@ -24,11 +24,7 @@ header { // general header
 
   background: image-url('layout/relief.png') repeat center 0 $bkgColor; // IE
   @include background(image-url("layout/relief.png") repeat center 0 $bkgColor);
-
   @include box-shadow(rgba(black, 0.3) 0 0 12px, rgba(0,0,0, 0.09) 0 -5px 3px 0 inset);
-  @include transform-style("linear");
-  @include transition-property("background-color");
-  @include transition-duration(1000ms);
 
   &:before {
     position:absolute;
@@ -130,12 +126,12 @@ header { // general header
 
       form {
         position:relative;
-        width:247px;
+        width:140px;
         height:36px;
         margin:0;
 
         input[type="text"] {
-          width:207px;
+          width:100px;
           margin:0;
           padding:10px 30px 10px 10px;
           background:rgba(0,0,0,0.20);
