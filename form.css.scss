@@ -36,11 +36,9 @@
 
     .row {
       @include display-flex();
-      height:67px;
       margin-top:20px;
 
       p {
-        padding-top:24px;
         font-size:13px;
         font-style:italic;
         color:#CCCCCC;
@@ -146,8 +144,22 @@
       z-index:5;
       &:hover {cursor:pointer}
     }
-
   }
+
+  /////////////////////////////
+  // Styles by form position //
+  /////////////////////////////
+
+  // - <p> in right column has to have padding-top
+  // - <a> in right column has to appear underlined
+  // - <div class="row"> should height 62px at least
+
+  .right-column {
+    div.row { min-height:62px }
+    p { padding-top:24px }
+    p a { text-decoration:underline }
+  }
+
 
   // Tipsy for field error
   .error_tooltip {
