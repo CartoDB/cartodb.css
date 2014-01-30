@@ -237,8 +237,13 @@ div.subheader {
       .inner { position:relative; }
       .inner p { width: 1000px; color: #000; font-size: 15px; line-height: 18px; }
 
+      &.try_trial,
       &.upgraded {
         background: #DCF0C0;
+      }
+
+      &.try_trial {
+        .button { right: 20px}
       }
 
       .dark { color: #666666; }
@@ -254,7 +259,8 @@ div.subheader {
         &:active {@include common-sprite(close_grey, $offset-y: -26px);}
       }
 
-      a.upgrade {
+      a.upgrade,
+      a.trial {
         position:absolute;
         right:0;
         top:-3px;
