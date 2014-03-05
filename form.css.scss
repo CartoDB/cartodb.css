@@ -71,7 +71,7 @@
       @include inline-block();
       margin-right:20px;
       vertical-align:top;
-      
+
       &.field_with_errors {
         input[type="text"] {
           color: #E95850;
@@ -95,7 +95,7 @@
 
     .field-2 {
       width:202px;
-      
+
       input[type="text"],
       input[type="password"] {width:178px;}
 
@@ -106,7 +106,7 @@
 
     .field-3 {
       width:128px;
-      
+
       input[type="text"],
       input[type="password"] {width:103px;}
 
@@ -156,6 +156,9 @@
 
   .right-column {
     div.row { min-height:62px }
+    div.row.low-padding p { padding-top: 17px; }
+    div.row p a { color: #ccc; }
+
     p { padding-top:24px }
     p a { text-decoration:underline }
   }
