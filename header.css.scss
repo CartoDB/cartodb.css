@@ -13,6 +13,8 @@
 
 $text-shadow-color: rgba(black,0.25);
 
+body > .privacy_selector { z-index: 30; }
+
 header { // general header
   position:relative;
   display: block;
