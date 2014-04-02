@@ -22,7 +22,8 @@ $common-sprites: sprite-map("sprites/common/*.png",
   $common-badge_dedicated_server-spacing: 20px,
   $common-badge_mercator-spacing:         20px,
   $common-plus_big-spacing:               11px,
-  $common-file_type-spacing:              10px
+  $common-file_type-spacing:              10px,
+  $common-question_mark-spacing:          20px
 );
  
 // All sprites should extend this class
