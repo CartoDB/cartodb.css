@@ -168,7 +168,7 @@
     // Tips info
     &.tips {
       padding:20px 13px 13px 34px;
-      @include background(sprite($common-sprites, question_mark, $offset-x:15px, $offset-y:22px) no-repeat #E5F2FF);
+      // @include background(sprite($common-sprites, question_mark, $offset-x:15px, $offset-y:22px) no-repeat #E5F2FF);
       p { padding-left:10px; border-left:1px solid #CCCCCC; font-style:normal; }
     }
 
