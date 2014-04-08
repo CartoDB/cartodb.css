@@ -257,3 +257,13 @@
   -o-animation: $props;
   animation: $props;
 }
+
+// Transform mixin cross browsers
+@mixin browsers_transform($wk, $fx, $msie) {
+  @if $wk {
+    transform: $wk;
+  }
+  -webkit-transform: $wk;
+  -moz-transform: $fx;
+  -ms-transform: $msie;
+}
