@@ -232,6 +232,16 @@
   background-image: linear-gradient(top, rgba(255,255,255,0.04) 0%,rgba(255,255,255,0.95) 100%);
 }
 
+.black-gradient-shadow-bottom {
+  background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, rgba(255,255,255,0.04)), color-stop(100%, rgba(0,0,0,0.10)));
+  background-image: -webkit-linear-gradient(top, rgba(255,255,255,0.04) 0%, rgba(0,0,0,0.10) 100%);
+  background-image: -moz-linear-gradient(top, rgba(255,255,255,0.04) 0%, rgba(0,0,0,0.10) 100%);
+  background-image: -o-linear-gradient(top, rgba(255,255,255,0.04) 0%, rgba(0,0,0,0.10) 100%);
+  background-image: linear-gradient(top, rgba(255,255,255,0.04) 0%,rgba(0,0,0,0.10) 100%);
+}
+
+
+
 
 // keyframes mixin
 @mixin keyframes($name) {
