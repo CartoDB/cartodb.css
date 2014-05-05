@@ -112,6 +112,7 @@ div.subheader {
             &.mercator  { @include common-sprite(badge_mercator); }
             &.coronelli { @include common-sprite(badge_coronelli); }
             &.dedicated { @include common-sprite(badge_dedicated_server); }
+            &.internal  { @include common-sprite(badge_internal); }
 
             &.coronelli, &.dedicated { top: -15px; }
           }
