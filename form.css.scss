@@ -34,6 +34,12 @@
     // Form //
     //////////
 
+    .left-column .row p {
+      color: #333;
+      font-style: normal;
+      font-size: 14px;
+    }
+
     .row {
       @include display-flex();
       margin-top:20px;
@@ -59,6 +65,11 @@
       }
 
       @include default-input();
+      @include default-textarea();
+
+      textarea {
+        height: 140px;
+      }
 
       &:first-child { margin-top:0; }
     }
@@ -86,7 +97,8 @@
     .field-1 {
       width:100%;
       input[type="text"],
-      input[type="password"] { width:400px; }
+      input[type="password"],
+      textarea { width:400px; }
 
       &.field_with_errors input[type="text"] {
         width:359px;
@@ -115,6 +127,10 @@
       }
     }
 
+    .disconnect {
+      font-size: 12px;
+      text-decoration: underline;
+    }
 
     // Input types //
     input[disabled], input[readonly] {
