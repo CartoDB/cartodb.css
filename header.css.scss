@@ -42,7 +42,8 @@ header { // general header
   border-bottom: 1px solid #2F567E;
   z-index:2;
 
-  h1 {
+  h1,
+  .logo {
     margin:7px 0 0 0;
     a {
       @include inline-block();
