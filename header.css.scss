@@ -44,6 +44,7 @@ header { // general header
 
   h1,
   .logo {
+    position:relative;
     margin:7px 0 0 0;
     a {
       @include inline-block();
@@ -52,6 +53,24 @@ header { // general header
       @include common-sprite(cartodb);
       @include text-indent();
       &:focus,&:hover {outline:none; @include common-sprite(cartodb,$offset-y:-19px)}
+    }
+
+    em.posts {
+      position:absolute;
+      right:-40px;
+      top:-2px;
+      display:none;
+      margin-left:10px;
+      padding:2px 5px;
+      line-height:13px;
+      @include border-radius(2px);
+      font:700 9px "Helvetica", Arial;
+      background:white;
+      color:#2483B2;
+      text-transform:uppercase;
+
+      &.news { background:#E5FF99 }
+      &:hover { cursor:pointer }
     }
   }
 
