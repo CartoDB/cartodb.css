@@ -119,16 +119,17 @@ div.subheader {
         }
 
         .info {
+          position:relative;
           @include inline-block();
-          width: 6px;
-          padding: 2px 5px;
           top: -2px;
+          width:16px;
+          line-height:16px;
+          margin-left:2px;
           @include border-radius(40px);
           color:#fff;
           background:#ddd;
           font-size: 11px;
           text-align: center;
-          position:relative;
           cursor: help;
 
           &:hover {
@@ -203,13 +204,14 @@ div.subheader {
 
         p {
           margin:10px 0 0 0;
-          font-size:15px;
+          font-size:13px;
+          font-weight:300;
           color:#666666;
           @include transform-style("linear");
           @include transition-property("all");
           @include transition-duration(500ms);
 
-          strong {font-weight:bold}
+          strong { font-weight:500 }
         }
       }
     }
