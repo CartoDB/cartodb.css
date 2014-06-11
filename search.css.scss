@@ -31,7 +31,7 @@ div.search {
       outline:none;
 
       font-size: 13px;
-      font-family: "Helvetica", Arial;
+      font-family: $text-fonts2;
       letter-spacing:0;
 
       &::-webkit-input-placeholder { font-style: italic; color: #397DB8; }

@@ -64,7 +64,7 @@ header { // general header
       padding:2px 5px;
       line-height:13px;
       @include border-radius(2px);
-      font:700 9px "Helvetica", Arial;
+      font:700 9px $text-fonts2;
       background:white;
       color:#2483B2;
       text-transform:uppercase;
@@ -156,7 +156,7 @@ header { // general header
           margin:0;
           padding:10px 30px 10px 10px;
           background:rgba(0,0,0,0.20);
-          font:normal 13px "Helvetica",Arial;
+          font:normal 13px $text-fonts2;
           border:none;
           color:#9AB2CB;
           @include border-radius(4px);
