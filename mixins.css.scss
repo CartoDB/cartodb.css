@@ -46,6 +46,13 @@
   flex:  $values;
 }
 
+@mixin cross-browser($attr, $value) {
+  -webkit-#{$attr}: $value;
+  -moz-#{$attr}: $value;
+  -ms-#{$attr}: $value;
+  #{$attr}: $value;
+}
+
 @mixin progress-background($rgba) {
   background-image: -webkit-linear-gradient(-45deg,$rgba 25%,transparent 25%,transparent 50%,$rgba 50%,$rgba 75%,transparent 75%,transparent);
   background-image: -moz-linear-gradient(-45deg,$rgba 25%,transparent 25%,transparent 50%,$rgba 50%,$rgba 75%,transparent 75%,transparent);
