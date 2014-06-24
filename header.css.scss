@@ -23,10 +23,12 @@ header { // general header
   padding: 30px 0;
 
   $bkgColor: #428AC6;
-
+  
   background: image-url('layout/relief.png') repeat center 0 $bkgColor; // IE
   @include background(image-url("layout/relief.png") repeat center 0 $bkgColor);
   @include box-shadow(rgba(black, 0.3) 0 0 12px, rgba(0,0,0, 0.09) 0 -5px 3px 0 inset);
+  border-bottom: 1px solid #2F567E;
+  z-index:3;
 
   &:before {
     position:absolute;
@@ -38,9 +40,6 @@ header { // general header
     @include background(linear-gradient(rgba(0,0,0,0),rgba(0,0,0,0.1)));
     z-index:0;
   }
-
-  border-bottom: 1px solid #2F567E;
-  z-index:2;
 
   h1,
   .logo {
