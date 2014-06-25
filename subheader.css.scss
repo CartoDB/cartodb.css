@@ -139,6 +139,9 @@ div.subheader {
           }
         }
 
+        // Make over stats
+        .stats:hover { cursor:pointer }
+
         .progress {
           display:block;
           height:36px;
