@@ -25,6 +25,7 @@
   font: 10px sans-serif;
   @include border-radius(2px);
   pointer-events: none;
+  z-index:20;
 
   .tip {
     position:absolute;
