@@ -5,6 +5,7 @@
 
   @import "compass/css3/inline-block";
   @import "compass/css3/box-shadow";
+  @import "compass/css3/opacity";
   @import "common/mixins";
   @import "common/common-sprite";
   @import "common/vars";
@@ -39,6 +40,13 @@
       .info {
         width:140px;
         margin-left:8px;
+
+        h2 {
+          font-size:15px;
+          letter-spacing:0;
+          color:#4580B5;
+          line-height:22px;
+        }
         
         p {
           color:#4580B5;
@@ -56,12 +64,15 @@
           &.settings {@include common-sprite(settings_icons, $offset-x:-40px, $offset-y:-46px)}
           &.stats {@include common-sprite(settings_icons, $offset-x:-80px)}
         }
-        p {color:#666;}
+        p, h2 { color:#666 }
       }
 
       &.disabled {
+        opacity:1;
         cursor:default;
-        p {color:#4580B5}
+        
+        .icon { @include opacity(0.3) }
+        p, h2 { color:#CBDCEA}
       }
 
       &.selected {
