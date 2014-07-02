@@ -62,7 +62,7 @@
         .icon {
           &.organization {@include common-sprite(settings_icons, $offset-y:-46px)}
           &.settings {@include common-sprite(settings_icons, $offset-x:-40px, $offset-y:-46px)}
-          &.stats {@include common-sprite(settings_icons, $offset-x:-80px)}
+          &.stats {@include common-sprite(settings_icons, $offset-x:-80px, $offset-y:-46px)}
         }
         p, h2 { color:#666 }
       }
