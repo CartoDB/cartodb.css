@@ -7,6 +7,7 @@
 @import "compass/css3/images";
 @import "common/common-sprite";
 @import "common/mixins";
+@import "common/vars";
 
 .tipsy.feed {
   line-height: 120%;
@@ -115,7 +116,20 @@ div.subheader {
             &.dedicated { @include common-sprite(badge_dedicated_server); }
             &.internal  { @include common-sprite(badge_internal); }
 
-            &.coronelli, &.dedicated { top: -15px; }
+            &.enterprise {
+              @include display-flex();
+              @include cross-browser(align-items, center);
+              @include size(83px, 74px);
+              padding:0 5px;
+              margin-top:-5px;
+              @include common-sprite(badge_enterprise);
+              font:normal 11px $text-fonts2;
+              text-transform: uppercase;
+              text-align:center;
+              color: #BBBBBB;
+            }
+
+            &.coronelli, &.dedicated, &.enterprise { top: -15px; }
           }
         }
 
