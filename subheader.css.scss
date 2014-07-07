@@ -118,6 +118,7 @@ div.subheader {
 
             &.enterprise {
               @include display-flex();
+              @include cross-browser(justify-content, center);
               @include cross-browser(align-items, center);
               @include size(83px, 74px);
               padding:0 5px;
