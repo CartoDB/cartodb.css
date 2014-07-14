@@ -62,12 +62,12 @@ header { // general header
       top:-2px;
       display:none;
       margin-left:10px;
-      padding:2px 5px;
-      line-height:13px;
+      padding:2px 5px 1px;
+      line-height:10px;
       @include border-radius(2px);
       font:700 9px $text-fonts2;
-      background:white;
       color:#2483B2;
+      background:white;
       text-transform:uppercase;
 
       &.news { background:#E5FF99 }
