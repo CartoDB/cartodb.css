@@ -166,7 +166,7 @@ header { // general header
       form {
         position:relative;
         width:140px;
-        height:36px;
+        height:auto;
         margin:0;
 
         input[type="text"] {
@@ -216,6 +216,6 @@ header { // general header
     }
 
     // Admin header
-    &.admin { top:0 }
+    &.admin { margin-top:0 }
   }
 }
