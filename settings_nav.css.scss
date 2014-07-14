@@ -12,21 +12,26 @@
 
   nav.account-settings {
     position:relative;
+    display:block;
     background:white;
     border-bottom:1px solid #CECECE;
     @include single-box-shadow(0, 3px, 3px, 0, rgba(0,0,0,0.07), false);
     overflow:visible;
 
+    div.inner {
+      @include display-flex();
+      @include cross-browser(justify-content, space-around);
+      @include cross-browser(align-items, center);
+    }
+
     a {
-      @include inline-block();
+      @include display-flex();
+      @include cross-browser(justify-content, space-between);
+      @include cross-browser(align-items, center);
       width:187px;
       margin:0;
-      padding:25px 30px;
+      padding:25px;
       border-right:1px solid #E5E5E5;
-
-      .icon, .info {
-        @include inline-block();
-      }
 
       .icon {
         width:34px;
@@ -38,8 +43,8 @@
       }
 
       .info {
-        width:140px;
-        margin-left:8px;
+        width:145px;
+        margin-left:5px;
 
         h2 {
           font-size:15px;
