@@ -78,8 +78,8 @@ header { // general header
   ul {
     position:relative;
     @include display-flex();
-    @include cross-browser(justify-content, center);
-    @include cross-browser(align-items, center);
+    @include justify-content(center, center);
+    @include align-items(center, center);
     margin-top:7px;
     width:auto;
 
@@ -124,8 +124,8 @@ header { // general header
 
         &.account {
           @include display-flex();
-          @include cross-browser(justify-content, center);
-          @include cross-browser(align-items, center);
+          @include justify-content(center, center);
+          @include align-items(center, center);
 
           img {
             width:18px;

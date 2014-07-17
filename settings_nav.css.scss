@@ -20,20 +20,21 @@
 
     div.inner {
       @include display-flex();
-      @include cross-browser(justify-content, space-around);
-      @include cross-browser(align-items, center);
+      @include justify-content(space-around, justify);
+      @include align-items(center, center);
     }
 
     a {
       @include display-flex();
-      @include cross-browser(justify-content, center);
-      @include cross-browser(align-items, center);
+      @include justify-content(center, center);
+      @include align-items(center, center);
       width:200px;
       margin:0;
       padding:25px;
       border-right:1px solid #E5E5E5;
 
       .icon {
+        display:inline-block;
         width:34px;
         height:34px;
         @include common-sprite(settings_icons);
@@ -43,6 +44,7 @@
       }
 
       .info {
+        display:inline-block;
         width:145px;
         margin-left:10px;
 
