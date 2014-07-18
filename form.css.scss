@@ -84,7 +84,8 @@
       vertical-align:top;
 
       &.field_with_errors {
-        input[type="text"] {
+        input[type="text"],
+        input[type="password"] {
           color: #E95850;
           border-color: #F08A84;
           padding-right:51px;
@@ -100,8 +101,13 @@
       input[type="password"],
       textarea { width:400px; }
 
-      &.field_with_errors input[type="text"] {
-        width:359px;
+      textarea { max-width:400px }
+
+      &.field_with_errors {
+        input[type="text"],
+        input[type="password"] {
+          width:359px;  
+        }
       }
     }
 
@@ -111,8 +117,11 @@
       input[type="text"],
       input[type="password"] {width:178px;}
 
-      &.field_with_errors input[type="text"] {
-        width:137px;
+      &.field_with_errors {
+        input[type="text"],
+        input[type="password"] {
+          width:137px;
+        }
       }
     }
 
@@ -122,8 +131,11 @@
       input[type="text"],
       input[type="password"] {width:103px;}
 
-      &.field_with_errors input[type="text"] {
-        width:62px;
+      &.field_with_errors {
+        input[type="text"],
+        input[type="password"] {
+          width:62px;
+        }
       }
     }
 
