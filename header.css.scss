@@ -25,7 +25,7 @@ header { // general header
   padding: 30px 0;
 
   $bkgColor: #428AC6;
-  
+  @include background(image-url("layout/new_header_bkg.jpg") repeat center 0); // For IE
   @include background(image-url("layout/new_header_bkg.jpg") repeat center 0, linear-gradient(top, #519FD9,#3383C7));
   @include box-shadow(rgba(black, 0.3) 0 0 12px, rgba(0,0,0, 0.09) 0 -5px 3px 0 inset);
   border-bottom: 1px solid #2F567E;

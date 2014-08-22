@@ -93,7 +93,7 @@
     // Common
     .common_data {
       position:absolute;
-      bottom:-18px;
+      top:42px;
       right: 0;
       margin: 9px 0 0 0;
       color: #999;
@@ -176,7 +176,7 @@
     .upload {
       position:relative;
       display:block;
-      margin:20px 0 0 0;
+      margin:20px 0 10px 0;
       padding:10px;
       border:1px solid #CCCCCC;
       @include border-radius(4px);
