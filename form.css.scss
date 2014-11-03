@@ -40,6 +40,15 @@
       font-size: 14px;
     }
 
+    &.edit_user .left-column .row label.simple-label {
+      color: #333;
+      font-style: normal;
+      font-weight: normal;
+      font-size: 14px;
+      text-transform: none;
+      cursor: pointer;
+    }
+
     .row {
       @include display-flex();
       margin-top:20px;
