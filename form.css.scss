@@ -40,7 +40,8 @@
       font-size: 14px;
     }
 
-    .simple-label {
+    label.simple-label,
+    &.edit_user .left-column .row label.simple-label {
       color: #333;
       font-style: normal;
       font-weight: normal;
