@@ -5,6 +5,7 @@
 @import "compass/css3/box-sizing";
 @import "compass/css3/inline-block";
 @import "common/mixins";
+@import "common/common-sprite";
 
 .VideoPlayer {
   position:fixed;
@@ -84,14 +85,17 @@
   display: block;
   width: 14px;
   padding: 7px 13px;
-  @include background(image-url("layout/videoplayer_toggle.png") no-repeat center center, rgba(0,0,0,.3));
+  background: sprite($common-sprites, videoplayer_toggle, $offset-x:6px, $offset-y: 7px) no-repeat rgba(0,0,0,.3);
+}
+.VideoPlayer .VideoContent .VideoControls li .Button.toggle:hover {
+  background: sprite($common-sprites, videoplayer_toggle, $offset-x:6px, $offset-y: -25px) no-repeat rgba(0,0,0,.3);
 }
 
 .VideoPlayer .VideoContent .VideoControls li .Button:hover {
-  border-color:#B8E986;
+  border-color:#cccccc;
 }
 .VideoPlayer .VideoContent .VideoControls li .Button:hover span {
-  color: #B8E986;
+  color: #cccccc;
 }
 .VideoPlayer .VideoContent .VideoControls li .Button,
 .VideoPlayer .VideoContent .VideoControls li .Button span {
