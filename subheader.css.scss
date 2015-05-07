@@ -6,9 +6,9 @@
 @import "compass/css3/inline-block";
 @import "compass/css3/transform";
 @import "compass/css3/images";
-@import "common/common-sprite";
-@import "common/mixins";
-@import "common/vars";
+@import "./common-sprite";
+@import "./mixins";
+@import "./vars";
 
 .tipsy.feed {
   line-height: 120%;

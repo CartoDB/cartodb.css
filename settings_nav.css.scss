@@ -6,9 +6,9 @@
   @import "compass/css3/inline-block";
   @import "compass/css3/box-shadow";
   @import "compass/css3/opacity";
-  @import "common/mixins";
-  @import "common/common-sprite";
-  @import "common/vars";
+  @import "./mixins";
+  @import "./common-sprite";
+  @import "./vars";
 
   nav.account-settings {
     position:relative;

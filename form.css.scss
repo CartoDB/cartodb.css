@@ -6,10 +6,10 @@
   @import "compass/css3/inline-block";
   @import "compass/css3/border-radius";
   @import "compass/css3/box-shadow";
-  @import "common/vars";
-  @import "common/mixins";
-  @import "common/form-elements";
-  @import "common/common-sprite";
+  @import "./vars";
+  @import "./mixins";
+  @import "./form-elements";
+  @import "./common-sprite";
 
 
   form {

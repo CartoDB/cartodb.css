@@ -4,10 +4,10 @@
    */
 
   @import "compass/css3/background-size";
-  @import "common/vars";
-  @import "common/mixins";
-  @import "common/form-elements";
-  @import "common/common-sprite";
+  @import "./vars";
+  @import "./mixins";
+  @import "./form-elements";
+  @import "./common-sprite";
 
 
   // Upload tabs
