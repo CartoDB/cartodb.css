@@ -225,7 +225,10 @@
         position:relative;
         pointer-events:none;
 
-        p {z-index:0;}
+        p {
+          font-size: 15px;
+          z-index:0;
+        }
       }
 
       .fileinput-button {

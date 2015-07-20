@@ -3,9 +3,7 @@
    * - Article, Section, aside, ..
    */
 
-  @import "compass/css3/box-shadow";
-  @import "compass/css3/border-radius";
-  @import "compass/css3/inline-block";
+  @import "compass";
 
   article {
     padding:40px 0 50px 0;
@@ -78,8 +76,6 @@
     &.long {width:638px;}
     // Longer section
     &.longer {width:960px;}
-    // Longest!
-    &.longest {width:1024px;}
   }
 
 
