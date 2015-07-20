@@ -66,7 +66,7 @@
       }
 
       & > p,
-      & > div:not() > p { font-size: 15px }
+      & > div > p { font-size: 15px }
     }
 
     div.foot {
