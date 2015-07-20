@@ -64,6 +64,11 @@
           &:last-child {border-bottom:none;}
         }
       }
+
+      & > p,
+      & > div:not() > p:not() {
+        font-size: 15px
+      }
     }
 
     div.foot {
