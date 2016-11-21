@@ -156,9 +156,5 @@
 @include font-face("Helvetica", font-files("helvetica.ttf"), "helvetica.eot", normal, normal);
 @include font-face("Helvetica", font-files("helvetica-bold.ttf"), "helvetica-bold.eot", bold, normal);
 
-/*ProximaNova*/
-@include font-face("ProximaNova", font-files("ProximaNova-Regular.ttf"), "ProximaNova-Regular.eot", bold, normal);
-@include font-face("ProximaNova-Semibold", font-files("ProximaNova-Semibold.ttf"), "ProximaNova-Semibold.eot", bold, normal);
-
 /*CartoIcon*/
 @include font-face("cartoIcon", font-files("cartoIcon.ttf", "cartoIcon.svg", "cartoIcon.woff"), "cartoIcon.eot", normal, normal);
